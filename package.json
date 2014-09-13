@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "moxtra-concierge",
+  "version": "1.0.0",
+  "description": "digital conierge for small business e-stores",
+  "main": "server.js",
+  "dependencies": {
+    "colors": "^0.6.2",
+    "express": "^4.9.0"
+  },
+  "devDependencies": {
+    "colors": "^0.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vforeman/moxtra-concierge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vforeman/moxtra-concierge/issues"
+  },
+  "homepage": "https://github.com/vforeman/moxtra-concierge"
+}
