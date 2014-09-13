@@ -1,26 +1,13 @@
 {
-  "scripts": {
-    "start": "node server.js"
-  },
-  "name": "moxtra-concierge",
-  "version": "1.0.0",
-  "description": "digital conierge for small business e-stores",
+  "name": "cldc-site",
+  "version": "0.0.1",
+  "description": "CLDC Site.",
   "main": "server.js",
+  "author": "Errol J. Grannum",
   "dependencies": {
-    "colors": "^0.6.2",
-    "express": "^4.9.0"
-  },
-  "devDependencies": {
-    "colors": "^0.6.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vforeman/moxtra-concierge.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vforeman/moxtra-concierge/issues"
-  },
-  "homepage": "https://github.com/vforeman/moxtra-concierge"
+    "express": "~3.4.8",
+    "mongoose": "~3.8.4",
+    "logfmt": "~0.18.1",
+    "mongodb": "~1.3.23"
+  }
 }
