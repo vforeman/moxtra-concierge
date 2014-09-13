@@ -36,7 +36,7 @@
             var client_id = "q0WKF_jFRck";
             var client_secret = "hfVt3uI6ynM";
             var timestamp = new Date().getTime();
-            var unique_id = "test123"; //Unique ID of how user is identified in your system
+            var unique_id = "admin"; //Unique ID of how user is identified in your system
             
             var hash = CryptoJS.HmacSHA256(client_id + unique_id + timestamp, client_secret);
             var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
@@ -49,8 +49,8 @@
             function get_token() {
                 var init_options = {
                     uniqueid: unique_id,
-                    firstname: "John",
-                    lastname: "Doe",
+                    firstname: "shop",
+                    lastname: "owner",
                     timestamp: timestamp,
                     signature: signature,
                     get_accesstoken: function(result) {
@@ -70,7 +70,7 @@
         function start_chat (access_token) {            
             var chat_options = {
                 //unique id of the users who will be part of the chat. These users should already exist in Moxtra.
-                unique_id: "test123,test125",  
+                unique_id: "test123,admin",  
                 iframe: true,
                 tagid4iframe: "container",
                 iframewidth: "1000px",
@@ -102,6 +102,7 @@
             Moxtra.chat(chat_options);
         }
         </script>
+        <h3><a id="getToken" href="javascript:get_token();">Moxtra Chat</a></h3>
         <h3><a id="getToken" href="javascript:get_token();">Moxtra Chat</a></h3>
 <div ng-view>
   <!-- templates inserted here -->
