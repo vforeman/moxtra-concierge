@@ -24,3 +24,13 @@ app.listen(port, function(){
 	console.log("Listening on " + port);
 });
 
+var dash = express();
+dash.use(express.static(__dirname + '/dashboard/static'));
+dash.get('/',function(req,res){
+  res.sendfile('dashboard/base.html');
+});
+var dashport = 5555;
+dash.listen(dashport, function(){
+  console.log("listening on " + dashport);
+});
+
