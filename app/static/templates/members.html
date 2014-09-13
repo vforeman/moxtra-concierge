@@ -1,0 +1,105 @@
+<div style="background-image:url('/bgmembers.jpg');
+			background-size:contain;"class='members container'>
+
+
+  
+
+<div class='pagewrap'>
+			
+
+			<div style="background-image:url('media/webserver.jpg');background-size:cover;background-position:50% 50%;" class='row '>
+				<!-- center column -->
+			<div  class='col-md-8 col-md-push-2 white '>
+				<div class='memberstitle'>
+					<h2>cldc member resume bank</h2>
+					<p>learn <i class="fa fa-chevron-right"></i> apply</p>
+					<br> 
+				</div>
+				
+			</div>
+				<!-- left column -->
+			<div class='col-md-2 col-md-pull-8 white'></div>	
+				<!-- right column -->
+			<div class='col-md-2 white'></div>
+
+			</div>
+
+			<div class='row'>
+
+
+
+
+
+				<!-- center column -->
+			<div class='col-md-8  '>
+				
+				<div ng-repeat='member in members'>
+					<div ng-init='hide1=false' class='memberscontent white'>
+						<h4 ng-click='hide1=!hide1'>{{members[$index].name}}</h4>
+						<p ng-hide='hide1'>{{members[$index].email}}</p>
+						
+					</div><!-- <hr style="border: 1px dotted #ff0000;
+    border-style: none none dotted; 
+    color: #fff; 
+    background-color: #fff;"> -->
+				
+				</div>
+				
+				
+
+				
+			
+			
+
+
+			</div>
+
+
+				 
+				<!-- right column -->
+				<div class='col-md-4 black '>
+					<div class='row mainrightcontent'>
+					<div class='col-xs-6'>
+						<img class='  img-responsive' src="http://placehold.it/150x150">
+					
+
+					</div>
+					<div class='col-xs-6 '><br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias! </p>
+					</div></div>
+					<hr>
+					<div class='row mainrightcontent'>
+					<div class='col-xs-6'>
+						<img class='  img-responsive' src="http://placehold.it/150x150">
+					
+
+					</div>
+					<div class='col-xs-6 '><br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, soluta, fugiat.</p>
+					</div></div>
+					<hr>
+					<div class='row mainrightcontent'>
+					<div class='col-xs-6'>
+						<img class='  img-responsive' src="http://placehold.it/150x150">
+					
+
+					</div>
+					<div class='col-xs-6 '><br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, sequi.</p>
+					</div></div>
+				</div>
+
+			</div>
+		
+		
+		</div>
+
+
+
+
+
+
+
+
+
+  </div>
