@@ -26,7 +26,7 @@ var initChat = function(session){
                     signature: session.signature,
                     get_accesstoken: function(result) {
                         console.log("access_token: " + result.access_token + " expires in: " + result.expires_in);
-                        render_chat(result.access_token);
+                        render_chat(result.access_token,session);
                     },
                     error: function(result) {
                         console.log("error code: " + result.error_code + " message: " + result.error_message);
