@@ -31,21 +31,15 @@
 <body ng-controller="mainController" >
  <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/hmac-sha256.js"></script>
         <script src="https://crypto-js.googlecode.com/svn/tags/3.1.2/build/components/enc-base64-min.js"></script>
-<!-- Create Signature -->
-        <script type="text/javascript">// <![CDATA[
-            var client_id = "q0WKF_jFRck";
-            var client_secret = "hfVt3uI6ynM";
-            var timestamp = new Date().getTime();
-            var unique_id = "admin"; //Unique ID of how user is identified in your system
-            
-            var hash = CryptoJS.HmacSHA256(client_id + unique_id + timestamp, client_secret);
-            var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
-            var signature = hashInBase64.replace(/\+/g, '-').replace(/\//g, '_').replace(/\=+$/, '');
-            // ]]>
+        <script type="text/javascript" src = '/scripts/moxtra_functions.js'></script>
+        <script type="text/javascript">
+        initSession(session);
+        initChat(session);
+        
         </script>
         
         <!-- Initialize user and get access token -->
-        <script type="text/javascript">
+       <!-- <script type="text/javascript">
             function get_token() {
                 var init_options = {
                     uniqueid: unique_id,
@@ -65,7 +59,7 @@
             }
         </script>
  
-        <!-- Start Chat Function -->
+        Start Chat Function 
         <script type="text/javascript">
         function start_chat (access_token) {            
             var chat_options = {
@@ -103,7 +97,7 @@
         }
         </script>
         <h3><a id="getToken" href="javascript:get_token();">Moxtra Chat</a></h3>
-        <h3><a id="getToken" href="javascript:get_token();">Moxtra Chat</a></h3>
+        <h3><a id="getToken" href="javascript:get_token();">Moxtra Chat</a></h3>-->
 <div ng-view>
   <!-- templates inserted here -->
   templates heres
