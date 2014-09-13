@@ -1,7 +1,7 @@
 //core.js
 
 // create the module and name it app
-var app = angular.module('app', ['ngRoute']);
+var app = angular.module('dash', ['ngRoute']);
 
 
 // configure our routes

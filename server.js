@@ -24,6 +24,7 @@ app.listen(port, function(){
 	console.log("Listening on " + port);
 });
 
+
 var dash = express();
 dash.use(express.static(__dirname + '/dashboard/static'));
 dash.get('/',function(req,res){
